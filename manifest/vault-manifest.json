@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "name": "Knowledge Workspace",
+  "language": "zh-CN",
+  "defaultDepth": 2,
+  "system": [
+    { "name": "_模板", "purpose": "可复用笔记模板" },
+    { "name": "_附件", "purpose": "图片和文档附件", "children": ["YYYY"] },
+    { "name": "_周期笔记", "purpose": "日记、周记、月记和年度记录", "children": ["日记", "周记", "月记", "年记"] }
+  ],
+  "zones": [
+    { "name": "Inbox", "displayName": "收件箱", "purpose": "临时捕获和待处理内容", "categories": [
+      { "name": "Quick Notes", "displayName": "速记" }, { "name": "Tasks", "displayName": "待办" }, { "name": "To Read", "displayName": "待读" }
+    ] },
+    { "name": "Notes", "displayName": "笔记", "purpose": "原创内容与个人思考", "categories": [
+      { "name": "Ideas", "displayName": "灵感" }, { "name": "Reading", "displayName": "读书" }, { "name": "Learning", "displayName": "学习" }, { "name": "Journal", "displayName": "随笔" }, { "name": "Writing", "displayName": "创作" },
+      { "name": "Media", "displayName": "自媒体", "children": ["选题", "脚本", "素材", "剪辑", "文案", "发布"] }
+    ] },
+    { "name": "Resources", "displayName": "资源", "purpose": "外部资源和参考资料", "categories": [
+      { "name": "Websites", "displayName": "网站", "children": ["AI与开发", "学习与研究", "生活服务", "媒体与社区"] },
+      { "name": "Tools", "displayName": "工具", "children": ["桌面软件", "移动应用", "在线工具", "开发工具", "AI工具", "系统工具", "网络工具"] },
+      { "name": "Repositories", "displayName": "GitHub仓库", "children": ["AI与智能体", "开发与编程", "前端与设计", "自动化与工作流", "运维与部署", "知识管理", "文档与模板"] },
+      { "name": "Clippings", "displayName": "剪藏", "children": ["文章", "教程", "案例", "灵感"] },
+      { "name": "Entertainment", "displayName": "娱乐", "children": ["影视", "音乐", "游戏", "阅读"] },
+      { "name": "Assets", "displayName": "素材", "children": ["图片", "图标", "字体", "模板", "视频", "文档"] },
+      { "name": "Stickers", "displayName": "表情包", "children": ["日常", "反应", "聊天"] },
+      { "name": "Wallpapers", "displayName": "壁纸", "children": ["桌面", "手机", "锁屏", "动态"] }
+    ] },
+    { "name": "Knowledge", "displayName": "知识", "purpose": "理解后可复用的知识", "categories": [
+      { "name": "Technology", "displayName": "技术", "children": ["编程", "人工智能", "网络与运维", "软件与工具"] },
+      { "name": "Methods", "displayName": "方法论", "children": ["学习方法", "工作流程", "决策方法", "问题解决"] },
+      { "name": "Research", "displayName": "调研", "children": ["产品与市场", "技术评估", "行业研究", "资料综述"] },
+      { "name": "Life Skills", "displayName": "生活", "children": ["生活技巧", "健康习惯", "消费与选择"] },
+      { "name": "Practical Guides", "displayName": "办事", "children": ["行政事务", "家庭事务", "出行事务"] },
+      { "name": "Humanities", "displayName": "人文", "children": ["历史", "心理", "文化", "哲学与社会"] }
+    ] },
+    { "name": "Workspace", "displayName": "工作台", "purpose": "项目、系统、自动化和运维", "categories": [
+      { "name": "Projects", "displayName": "项目", "allowProjectFolders": true },
+      { "name": "AI Systems", "displayName": "智能体与AI", "children": ["提示词", "Agent与Skill", "工具与平台", "模型与服务", "对话记录", "长期记忆"] },
+      { "name": "Automation", "displayName": "自动化", "children": ["脚本", "工作流", "定时任务", "监控"] },
+      { "name": "Experiments", "displayName": "实验" },
+      { "name": "Infrastructure", "displayName": "基础设施", "children": ["存储与NAS", "虚拟化与容器", "服务器", "云服务", "网络"] }
+    ] },
+    { "name": "Records", "displayName": "事务记录", "purpose": "账号、个人档案和订阅", "sensitive": true, "categories": [
+      { "name": "Accounts", "displayName": "账号", "children": ["邮箱", "通信", "金融", "社交与媒体", "其他服务"] },
+      { "name": "Personal Records", "displayName": "个人档案", "children": ["教育", "职业", "证件"] },
+      { "name": "Subscriptions", "displayName": "订阅", "children": ["软件与服务", "媒体内容", "周期支出"] }
+    ] },
+    { "name": "Health", "displayName": "健康", "purpose": "健身、饮食与医疗健康", "sensitive": true, "categories": [
+      { "name": "Fitness", "displayName": "健身", "children": ["训练计划", "动作与记录"] },
+      { "name": "Food", "displayName": "饮食", "children": ["菜谱", "营养与饮食计划"] },
+      { "name": "Healthcare", "displayName": "医疗健康", "children": ["就诊记录", "检查资料", "健康计划"] }
+    ] },
+    { "name": "Finance", "displayName": "财务", "purpose": "收支、资产和保险", "sensitive": true, "categories": [
+      { "name": "Budgeting", "displayName": "收支记录", "children": ["预算", "日常收支", "周期汇总"] },
+      { "name": "Investments", "displayName": "投资理财", "children": ["资产配置", "研究与记录"] },
+      { "name": "Insurance", "displayName": "保险", "children": ["保单", "续保与理赔"] }
+    ] },
+    { "name": "Home and Life", "displayName": "家庭与生活", "purpose": "家务、宠物、人际和旅行", "categories": [
+      { "name": "Household", "displayName": "家务", "children": ["维护", "采购", "家庭流程"] },
+      { "name": "Pets", "displayName": "宠物", "children": ["照护", "健康", "用品"] },
+      { "name": "People", "displayName": "人际", "children": ["联系记录", "重要日期"] },
+      { "name": "Travel", "displayName": "旅行", "children": ["计划", "行程", "复盘"] },
+      { "name": "Gifts", "displayName": "礼物", "children": ["收礼偏好", "送礼记录"] }
+    ] },
+    { "name": "Archive", "displayName": "归档", "purpose": "已完成或不再活跃的内容", "appendOnly": true, "categories": [
+      { "name": "Projects", "displayName": "项目" }, { "name": "Knowledge", "displayName": "知识" }, { "name": "Life", "displayName": "生活" }, { "name": "By Year", "displayName": "年度" }
+    ] },
+    { "name": "Review Queue", "displayName": "待整理区", "purpose": "临时待确认与待处理内容", "temporary": true, "categories": [
+      { "name": "Unsorted", "displayName": "未分类" }, { "name": "Needs Review", "displayName": "待确认" }, { "name": "Deletion Candidates", "displayName": "待删除" }
+    ] }
+  ],
+  "rules": {
+    "defaultDepth": 2,
+    "createSubgroupsWhen": ["主题内容需要独立检索", "形成独立维护流程", "项目需要专属工作区", "需要明确的数据访问边界"],
+    "useMetadataInsteadOfFoldersFor": ["最近", "重要", "待读", "临时", "精选"],
+    "appendOnlyZones": ["归档"],
+    "temporaryZones": ["收件箱", "待整理区"]
+  }
+}

@@ -1,0 +1,29 @@
+# Obsidian runtime state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/plugins/
+
+# Private and local content
+private/
+secrets/
+attachments-private/
+*.key
+*.pem
+*.pfx
+*.p12
+*.env
+*.env.*
+
+# Generated files
+generated-vault/
+generated-vault-test/
+dist/
+reports/
+
+# OS and editor files
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.bak

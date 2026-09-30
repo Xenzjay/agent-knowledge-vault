@@ -1,0 +1,39 @@
+version: 1
+fallback:
+  target: 收件箱/速记
+
+rules:
+  - id: github-repository
+    match: [github.com, 仓库, repository, repo]
+    target: 资源/GitHub仓库
+    action: resource-card
+
+  - id: website
+    match: [网址, 网站, 网页, URL, article]
+    target: 资源/网站
+    action: resource-card
+
+  - id: tool
+    match: [工具, 软件, app, CLI, API]
+    target: 资源/工具
+    action: resource-card
+
+  - id: clipping
+    match: [文章, 教程, 案例, 剪藏]
+    target: 资源/剪藏
+    action: resource-card
+
+  - id: agent
+    match: [Agent, Skill, Prompt, 提示词, MCP, 自动化]
+    target: 工作台/智能体与AI
+    action: capability-card
+
+  - id: task
+    match: [待办, 任务, TODO, 提醒]
+    target: 收件箱/待办
+    action: task-note
+
+  - id: preference
+    match: [偏好, 以后, 记住, 不要再问]
+    target: 工作台/智能体与AI
+    action: memory-note
